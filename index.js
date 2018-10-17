@@ -27,13 +27,13 @@ require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
 
 if (process.env.NODE_ENV === "production") {
-  //js and css assets
+  //attempt to load js and css asset
   app.use(express.static("client/build"));
 
-  //react app
-  const pat = require("path");
+  //default to react app
+  const path = require("path");
   app.get("*", (req, res) => {
-    res.sendFilepath.resolve(__dirname, "client", "build", "index.html");
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
