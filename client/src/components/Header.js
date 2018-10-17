@@ -19,7 +19,10 @@ class Header extends Component {
           <li key="1">
             <Payments />
           </li>,
-          <li key="2">
+          <li key="2" style={{ margin: "0 10px" }}>
+            Credits: {this.props.auth.credits}
+          </li>,
+          <li key="3">
             <a href="/api/logout">Logout</a>
           </li>
         ];
@@ -28,8 +31,8 @@ class Header extends Component {
 
   render() {
     return (
-      <nav style={{'backgroundColor': '#1e88e5'}}>
-        <div className="nav-wrapper" >
+      <nav style={{ backgroundColor: "#1e88e5" }}>
+        <div className="nav-wrapper">
           <Link
             to={this.props.auth ? "/surveys" : "/"}
             className="left brand-logo"
