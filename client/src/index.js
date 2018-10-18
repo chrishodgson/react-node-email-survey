@@ -10,8 +10,6 @@ import reducers from './reducers';
 
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
-console.log(process.env, 'process.env'); 
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
