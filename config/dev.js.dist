@@ -1,0 +1,10 @@
+module.exports = {
+  googleClientID: 'REPLACE_ME',
+  googleClientSecret: 'REPLACE_ME',
+  mongoURI: 'REPLACE_ME',
+  cookieKey: 'REPLACE_ME',
+  stripePublishableKey: 'REPLACE_ME',
+  stripeSecretKey: 'REPLACE_ME',
+  sendGridKey: 'REPLACE_ME'
+  redirectDomain: 'http://localhost:3000'
+};

@@ -10,23 +10,8 @@ A full stack application built using react, redux, node and express that allows 
 
 ### Server keys
 
-create server keys file `config/dev.keys` containing the following, but replacing REPLACE_ME with your
-values (note the values should be wrapped in quotes):
-
-```
-module.exports = {
-  googleClientID: REPLACE_ME,
-  googleClientSecret: REPLACE_ME,
-  mongoURI: REPLACE_ME,
-  cookieKey: REPLACE_ME,
-  stripePublishableKey: REPLACE_ME,
-  stripeSecretKey: REPLACE_ME,
-  sendGridKey: REPLACE_ME
-  redirectDomain: 'http://localhost:3000'
-};
-```
-
-These keys are:
+Copy `config/dev.keys.dist` to `config/dev.keys` and replace REPLACE_ME with your
+values:
 
 - googleClientID: Google OAuth Client ID
 - googleClientSecret: Google OAuth Client Secret
@@ -38,18 +23,16 @@ These keys are:
 
 Tips:
 
-- Signup for mLab for the mongoDB database as service `https://mlab.com/`
-- Signup for stripe key `https://stripe.com/`
-- Signup for sendgrid key `https://app.sendgrid.com/`
-- Signup for OAuth clientId and secret `https://developers.google.com/`
+- Signup for mLab for the mongoDB database as service `https://mlab.com`
+- Signup for Stripe key `https://stripe.com`
+- Signup for Sendgrid key `https://app.sendgrid.com`
+- Signup for Google clientId and secret `https://console.developers.google.com` by enabling the Google+ Api in the google developers console
 
 ### Client keys
 
-Create client keys file `client/.env.development` containing the following, but replacing REPLACE_ME with your values (note the values should not be wrapped in quotes):
+Copy `client/env.dist` to `client/.env.development` and replace REPLACE_ME with your values:
 
-```
-REACT_APP_STRIPE_KEY=REPLACE_ME
-```
+- REACT_APP_STRIPE_KEY: the same value as `stripePublishableKey` above, but without the quotes
 
 ### Install dependencies and start the server
 
