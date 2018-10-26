@@ -1,6 +1,6 @@
 # ReactFullStackEmailSurvey
 
-A full stack application built using react, redux, node and express that allows users to login via Google and send simple surveys to a list of recipients via sendgrid using credits paid for via stripe. A summary of survey responses can be viewed in the app. The application can be run in development or production mode according to the `node.process.NODE_ENV` setting.
+A full stack application built using react, redux, node, express and mongoDB that allows users to login via Google and send simple surveys to a list of recipients via sendgrid using credits paid for via stripe. A summary of survey responses can be viewed in the app. The application can be run in development or production mode according to the `node.process.NODE_ENV` setting.
 
 ## Running in Development mode
 
