@@ -10,16 +10,19 @@ A full stack application built using react, redux, node and express that allows 
 
 ### Server keys
 
-Copy `config/dev.keys.dist` to `config/dev.keys` and replace REPLACE_ME with your
-values:
+```
+> cp config/dev.keys.dist config/dev.keys
+```
 
-- googleClientID: Google OAuth Client ID
-- googleClientSecret: Google OAuth Client Secret
-- mongoURI: MongoDB Database connection ie `mongodb://USER:PASSWORD@HOST:PORT/DATABASE`
-- cookieKey: random string for a cookie key ie `kjhkfdhskjfhd`
+Replace REPLACE_ME with your values:
+
+- `googleClientID`: Google OAuth Client ID
+- `googleClientSecret`: Google OAuth Client Secret
+- `mongoURI`: MongoDB Database connection ie `mongodb://USER:PASSWORD@HOST:PORT/DATABASE`
+- `cookieKey`: random string for a cookie key ie `kjhkfdhskjfhd`
 - stripePublishableKey: Stripe API Publishable Key
-- stripeSecretKey: Stripe API Secret Key
-- sendGridKey: SendGrid API Key
+- `stripeSecretKey`: Stripe API Secret Key
+- `sendGridKey`: SendGrid API Key
 
 Tips:
 
@@ -30,9 +33,13 @@ Tips:
 
 ### Client keys
 
-Copy `client/env.dist` to `client/.env.development` and replace REPLACE_ME with your values:
+```
+> cp client/env.dist client/.env.development
+```
 
-- REACT_APP_STRIPE_KEY: the same value as `stripePublishableKey` above, but without the quotes
+Replace REPLACE_ME with your values:
+
+- `REACT_APP_STRIPE_KEY`: the same value as `stripePublishableKey` above, but without the quotes
 
 ### Install dependencies and start the server
 
